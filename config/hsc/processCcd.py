@@ -26,9 +26,7 @@ for matcher in (config.charImage.ref_match.matcher,
                 config.calibrate.astrometry.matcher,
                 ):
     matcher.sourceSelector.active.sourceFluxType = 'Psf'
-    matcher.allowedNonperpDeg = 0.2
     matcher.maxRotationDeg = 1.145916
-    matcher.maxMatchDistArcSec = 2.0
     matcher.maxOffsetPix = 250
 
 # Do not use NO_DATA pixels for fringe subtraction.
